@@ -1,0 +1,8 @@
+footer,
+#footer,
+.ntp-footer,
+.customize-button-wrapper,
+.bottom-controls,
+#background-selection-bar {
+  display: none !important;
+}

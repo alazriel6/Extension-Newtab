@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+/* sembunyikan scrollbar di semua browser */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE */
+  scrollbar-width: none; /* Firefox */
+}
+
+@font-face {
+  font-family: 'Anurati';
+  src: url('/fonts/Anurati.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/fonts/Quicksand.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'digital-7';
+  src: url('/fonts/digital-7.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@layer base {
+  :root {
+    --font-anurati: "Anurati", sans-serif;
+    --font-quicksand: "Quicksand", sans-serif;
+    --font-digital-7: "digital-7", sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-anurati {
+    font-family: var(--font-anurati);
+  }
+
+  .font-quicksand {
+    font-family: var(--font-quicksand);
+  }
+
+  .font-digital-7 {
+    font-family: var(--font-digital-7);
+  }
+}
+
+@keyframes cloud-slow { 
+  0% { transform: translateX(-20%); }
+  100% { transform: translateX(120%); }
+}
+@keyframes cloud-slower { 
+  0% { transform: translateX(120%); }
+  100% { transform: translateX(-20%); }
+}
+@keyframes twinkle {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+.animate-cloud-slow { animation: cloud-slow 40s linear infinite; }
+.animate-cloud-slower { animation: cloud-slower 60s linear infinite; }
+.animate-twinkle { animation: twinkle 3s ease-in-out infinite; }
+.animate-pulse-slow { animation: pulse-slow 4s ease-in-out infinite; }
+
+
+.spin-slow {
+  animation: spin 14s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+img.round-smooth {
+  border-radius: 9999px;
+  backface-visibility: hidden;
+}
+
+.mini-calendar {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(12px);
+  border-radius: 1rem;
+  color: white;
+}
+
