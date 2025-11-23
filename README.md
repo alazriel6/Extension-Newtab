@@ -2,6 +2,11 @@
 
 > A fully customizable personal dashboard New Tab extension for Brave/Chrome browsers, built with modern web technologies.
 
+---
+## Contoh Gambar
+![alt text](<./public/ContohBg.png>)
+---
+
 ![React](https://img.shields.io/badge/react-19-blue?logo=react)
 ![Vite](https://img.shields.io/badge/vite-7-purple?logo=vite)
 ![Tailwind CSS](https://img.shields.io/badge/tailwindcss-4-38B2AC?logo=tailwind-css)
